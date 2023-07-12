@@ -1,0 +1,34 @@
+.yellow{
+    color: yellow;
+}
+
+.tagcloud-container {
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  right: 160px; /* Adjust the right value to move the tag cloud to the desired position */
+  transform: translateY(-50%);
+  overflow: clip;
+}
+  
+  .tagcloud--item {
+    padding: 50%px;
+    background-color: transparent;
+    border: 1;
+    color: white;
+    animation-name: inherit;
+  }
+
+  .tagcloud--item:hover{
+      font-size: 22px;
+   }
+
+   @media screen and (max-width: 1200px) {
+   .tagcloud-container{
+     position: static;
+     width: 100%;
+     height: 400%;
+     margin-top: 250px;
+     overflow: visible;
+     }
+   }
